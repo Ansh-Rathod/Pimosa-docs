@@ -5,6 +5,8 @@ description: "Two step guide to install FFmpeg and ImageMagick on macOS using Ho
 
 This two step guide explains how to install **FFmpeg** and **ImageMagick** on macOS using [Homebrew](https://brew.sh/).
 
+### Let's get started!
+
 <Steps>
 
   <Step title="Step 1: Install Homebrew (if not already installed)">
@@ -21,6 +23,14 @@ This two step guide explains how to install **FFmpeg** and **ImageMagick** on ma
     After installation, if you're prompted to add Homebrew to your system `PATH`, **copy the provided command** and run it with `sudo`. You may see something like this:
     
     ![Path Setup](../images/path.png)
+
+    like this but [you should copy it from the your terminal output of the previous command]
+    ```
+    sudo echo /Users/<your mac username>/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/<your mac username>/.zprofile eval "$(/opt/homebrew/bin/brew shellenv)"
+    ```
+
+    It will ask for your login password and you're done with the brew installation.
 
     For more detailed instructions, visit the [Homebrew Installation Guide](https://brew.sh).
   </Step>
